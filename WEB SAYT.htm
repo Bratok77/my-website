@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maksyň Foto Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+    }
+    header {
+      padding: 2rem;
+      text-align: center;
+      background-color: rgba(0,0,0,0.3);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      letter-spacing: 0.1rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+      gap: 1.5rem;
+    }
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      background: #222;
+    }
+    .gallery-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    }
+    .gallery-item img {
+      width: 100%;
+      display: block;
+      border-radius: 12px;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 1rem;
+      background-color: rgba(0,0,0,0.2);
+      margin-top: 3rem;
+    }
+    a.social-link {
+      color: #ffd700;
+      text-decoration: none;
+      margin: 0 0.5rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    a.social-link:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Maksyň Foto Portfolio</h1>
+    <p>Suratlarym we taslamalarym</p>
+  </header>
+  <main>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://i.postimg.cc/qv4YPWTv/IMG-20250309-210234-209.jpg" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1025/600/400" alt="Foto 2" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1035/600/400" alt="Foto 3" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1045/600/400" alt="Foto 4" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1055/600/400" alt="Foto 5" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://picsum.photos/id/1065/600/400" alt="Foto 6" />
+      </div>
+    </div>
+  </main>
+  <footer>
+    © 2025 Maks • 
+    <a href="https://www.instagram.com" target="_blank" class="social-link">Instagram</a> | 
+    <a href="https://www.facebook.com" target="_blank" class="social-link">Facebook</a> | 
+    <a href="https://www.linkedin.com" target="_blank" class="social-link">LinkedIn</a>
+  </footer>
+</body>
+</html>
